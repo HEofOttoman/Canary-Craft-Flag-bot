@@ -4,7 +4,7 @@
   "description": "A discord bot that displays the flags of the countries in the Canary Craft/ADSCraft Minecraft server.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "test.js"
   },
   "keywords": [],
   "author": "Henry Wauzivuff",
