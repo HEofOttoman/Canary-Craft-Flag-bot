@@ -3,6 +3,16 @@ A discord bot that displays the flags of the countries in the Canary Craft/ADSCr
 
 Warning: Uses some privileged intents, and is thus not intended for large-scale use.
 
+### Features:
+Features the following flags, along with a subtitle:
+- Nordia
+- Serenthia
+
+### Checklist
+- Attach images to the responses 
+- Add Thalizar flag
+- Add Nova flag
+
 ### Credits
 By HenryWauzivuff
 

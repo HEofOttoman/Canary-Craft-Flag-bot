@@ -23,11 +23,14 @@ client.on('messageCreate', (message) => {
 });
 
 client.on('messageCreate', (message) => {
-    if (message.content === 'hello') {
+    if (message.content === 'Hello') {
         message.reply('Hey!');
     }
     if (message.content === '!Nordia') {
-        message.reply('The Standard of The Sublime Nordian Shogunate');
+        message.reply('Standard of The Sublime Shogunate of Nordia'); // Nordian Flag
+    }
+    if (message.content === '!Serenthia') {
+        message.reply('Flag of the Kingdom of Serenthia');
     }
 });
 
