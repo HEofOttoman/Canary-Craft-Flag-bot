@@ -1,0 +1,15 @@
+{
+  "name": "canary-craft-flag-bot",
+  "version": "1.0.0",
+  "description": "A discord bot that displays the flags of the countries in the Canary Craft/ADSCraft Minecraft server.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Henry Wauzivuff",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^14.16.3"
+  }
+}
