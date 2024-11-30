@@ -22,8 +22,8 @@ client.once(Events.ClientReady, readyClient => {
 
 // Simple testing command
 client.on('messageCreate', (message) => {
-    if (message.content === 'Hello') {
-        message.reply({ content: 'Hey' });
+    if (message.content === 'Hello!') {
+        message.reply({ content: 'Hey!' });
     }
 });
 
@@ -38,11 +38,11 @@ client.on('messageCreate', (message) => {
         message.reply({ content: 'Flag of the Kingdom of Serenthia', files: [serenthiaflag] });
     }
     if (message.content === '!Nova') { // Nova
-        const novaflag = new AttachmentBuilder('file name here'); // add file
+        const novaflag = new AttachmentBuilder('./assets/Thalizar Flag.png'); // add file (current is placeholder)
         message.reply({ content: 'Flag of Nova.png', files: [novaflag ]});
     }
     if (message.content === '!Luxuria') { // Luxuria
-        const luxuriaflag = new AttachmentBuilder('file name here') // add file
+        const luxuriaflag = new AttachmentBuilder('./assets/Thalizar Flag.png') // add file (current is placeholder)
         message.reply({content: 'Flag of Luxuria.png', files: [luxuriaflag]});
     }
     if (message.content === '!Thalizar') { // Thalizar
