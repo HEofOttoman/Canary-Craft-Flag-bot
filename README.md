@@ -1,5 +1,6 @@
 # Canary Craft Flag Bot
 ![Demo Screenshot](<assets/Demo Screenshot.png>)
+[[assets\Demo Screenshot.png]]
 
 A Discord bot made with Discord.js that displays the flags of the countries from the Canary Craft/ADSCraft Minecraft server.
 
