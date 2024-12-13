@@ -1,12 +1,17 @@
 # Canary Craft Flag Bot
-A discord bot that displays the flags of the countries in the Canary Craft/ADSCraft Minecraft server.
+![alt text](<assets/Demo Screenshot.png>)
 
-Warning: Uses some privileged intents, and is thus not intended for large-scale use.
+A Discord bot made with Discord.js that displays the flags of the countries from the Canary Craft/ADSCraft Minecraft server.
+
+Warning: This bot uses the following privileged intents to function:
+- MessageContent
+- ServerMembers
 
 ### Features:
 Features the following flags, along with a subtitle:
 - Nordia
 - Serenthia
+- Thalizar
 
 ### Checklist
 - [ ] Make a list of tags
@@ -17,14 +22,15 @@ Features the following flags, along with a subtitle:
 - [ ] Add Nova flag
 - [ ] Add Luxuria flag
 - [ ] Possibly rework reply system to use embeds 
-- [ ] Possibly change how '!' commands are handled to use a better system
+- [ ] Possibly change how '!' commands are handled to use a different prefix system
 
 ### Credits
 Bot & code by HenryWauzivuff.
+All assets (images) are the copyright of Canary Craft. 
 
 ### How to use
 Use the bot invite, and invite the bot in your wanted server.
 
-To use the commands, start the message with ! and your desired country name.
+To use the commands, start the message with ! and a country name from Canary Craft.
 
-To self-host, you must make a file called 'config.json' with a variable called `Token` with the value of your own bot token. 
+To self-host the bot, you must make a file called 'config.json' with a variable called `Token` with the value of your own bot token.
