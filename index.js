@@ -10,8 +10,8 @@ const client = new Client({
     intents: [
         GatewayIntentBits.Guilds,
         GatewayIntentBits.GuildMessages,
-        GatewayIntentBits.GuildMembers, // Privileged intent, find out how to use wihtout
-        GatewayIntentBits.MessageContent // Privileged intent, find out how to use without
+        GatewayIntentBits.GuildMembers, // Privileged intent, find out how to use wihtout?
+        GatewayIntentBits.MessageContent // Privileged intent, find out how to use without?
     ]
 });
 
