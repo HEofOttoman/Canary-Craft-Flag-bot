@@ -35,19 +35,19 @@ client.on('messageCreate', (message) => {
     }
     if (message.content === '!Serenthia') { // Serenthia
         const serenthiaflag = new AttachmentBuilder('./assets/Serenthia Flag.png');
-        message.reply({ content: 'Flag of the Kingdom of Serenthia', files: [serenthiaflag] });
+        message.channel.send({ content: 'Flag of the Kingdom of Serenthia', files: [serenthiaflag] });
     }
     if (message.content === '!Nova') { // Nova
         const novaflag = new AttachmentBuilder('./assets/Thalizar Flag.png'); // add file (current is placeholder)
-        message.reply({ content: 'Flag of Nova.png', files: [novaflag ]});
+        message.channel.send({ content: 'Flag of Nova.png', files: [novaflag ]});
     }
     if (message.content === '!Luxuria') { // Luxuria
         const luxuriaflag = new AttachmentBuilder('./assets/Thalizar Flag.png') // add file (current is placeholder)
-        message.reply({content: 'Flag of Luxuria.png', files: [luxuriaflag]});
+        message.channel.send({content: 'Flag of Luxuria.png', files: [luxuriaflag]});
     }
     if (message.content === '!Thalizar') { // Thalizar
         const thalizarflag = new AttachmentBuilder('./assets/Thalizar Flag.png')
-        message.reply({content: 'Flag of the Thalizar Empire.png', files: [thalizarflag]});
+        message.channel.send({content: 'Flag of the Thalizar Empire.png', files: [thalizarflag]});
     }
 });
 
