@@ -10,8 +10,8 @@ const client = new Client({
     intents: [
         GatewayIntentBits.Guilds,
         GatewayIntentBits.GuildMessages,
-        GatewayIntentBits.GuildMembers, // Privileged intent, find out how to use wihtout?
-        GatewayIntentBits.MessageContent // Privileged intent, find out how to use without?
+        GatewayIntentBits.GuildMembers, // Privileged intent, maybe find out how to use without?
+        GatewayIntentBits.MessageContent // Privileged intent, maybe find out how to use without?
     ]
 });
 
@@ -38,8 +38,8 @@ client.on('messageCreate', (message) => {
         message.channel.send({ content: 'Flag of the Kingdom of Serenthia', files: [serenthiaflag] });
     }
     if (message.content === '!Nova') { // Nova
-        const novaflag = new AttachmentBuilder('./assets/Thalizar Flag.png'); // add file (current is placeholder)
-        message.channel.send({ content: 'Flag of Nova.png', files: [novaflag ]});
+        const novaflag = new AttachmentBuilder('./assets/Nova Flag.png'); // add file (current is placeholder)
+        message.channel.send({ content: 'The Flag of Nova', files: [novaflag ]});
     }
     if (message.content === '!Luxuria') { // Luxuria
         const luxuriaflag = new AttachmentBuilder('./assets/Thalizar Flag.png') // add file (current is placeholder)

@@ -12,6 +12,7 @@ Features the following flags, along with a subtitle:
 - Nordia
 - Serenthia
 - Thalizar
+- Nova
 
 ### Checklist
 - [ ] Make a list of tags
@@ -19,14 +20,14 @@ Features the following flags, along with a subtitle:
 - [x] Add Nordia flag
 - [x] Add Serenthia flag
 - [x] Add Thalizar flag
-- [ ] Add Nova flag
+- [x] Add Nova flag
 - [ ] Add Luxuria flag
 - [ ] Possibly rework reply system to use embeds 
 - [ ] Possibly change how '!' commands are handled to use a different prefix system
 
 ### Credits
 Bot & code by HenryWauzivuff.
-All assets (images) are the copyright of Canary Craft. 
+All assets (images) are the copyright of Canary Craft & Henry Wauzivuff. 
 
 ### How to use
 Use the bot invite, and invite the bot in your wanted server.
