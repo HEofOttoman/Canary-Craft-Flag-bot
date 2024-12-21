@@ -40,4 +40,4 @@ To self-host the bot, you must create a JSON file called 'config.json' with a va
 
 ### Credits
 Bot & code by HenryWauzivuff.
-All assets (images) are the copyright of Henry Wauzivuff and Canary Craft. 
+All assets (images) are the copyright of Canary Craft. 
