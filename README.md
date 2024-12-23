@@ -15,15 +15,16 @@ Features the following flags, along with a subtitle:
 - Nova
 
 ### Checklist
-- [ ] Make a list of commands
-- [x] Attach images of the flags to the responses 
+- [ ] Add a list of commands
+- [x] Attach images of the flags to the responses
 - [x] Add Nordia flag
 - [x] Add Serenthia flag
 - [x] Add Thalizar flag
 - [x] Add Nova flag
 - [ ] Add Luxuria flag
+- [ ] Add Jiyustan flag
 - [ ] Possibly rework reply system to use embeds 
-- [ ] Possibly change how commands are handled to use a different prefix system
+- [ ] Possibly change how commands are handled to use a different system
 
 ### How to use
 Use the [bot invite](https://discord.com/oauth2/authorize?client_id=1309719801165385728&permissions=116736&integration_type=0&scope=bot), and invite the bot to your desired server.
@@ -40,4 +41,4 @@ To self-host the bot, you must create a JSON file called 'config.json' with a va
 
 ### Credits
 Bot & code by HenryWauzivuff.
-All assets (images) are the copyright of Canary Craft. 
+All assets (images) are the copyright of Canary Craft.
