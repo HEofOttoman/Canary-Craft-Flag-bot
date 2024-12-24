@@ -1,9 +1,9 @@
 # Canary Craft Flag Bot
 ![Demo Screenshot](<https://github.com/HEofOttoman/Canary-Craft-Flag-bot/blob/9a71f9d7baeaf9fcaa67f5ba9e4769225af0108b/Assets/Demo%20Screenshot%202.png>)
 
-A Discord bot made with Discord.JS that displays the flags of the countries from the Canary Craft/ADSCraft Minecraft server.
+A Discord bot made with Discord.JS that displays the flags of countries from the Canary Craft/ADSCraft Minecraft server.
 
-Warning: This bot uses the following privileged intents to function:
+Disclaimer: This bot uses the following privileged intents to function:
 - MessageContent
 - ServerMembers
 
@@ -41,4 +41,3 @@ To self-host the bot, you must create a JSON file called 'config.json' with a va
 
 ### Credits
 Bot & code by HenryWauzivuff.
-All assets (images) are the copyright of Canary Craft.
