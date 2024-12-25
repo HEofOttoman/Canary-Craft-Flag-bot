@@ -21,8 +21,9 @@ Features the following flags, along with a subtitle:
 - [x] Add Serenthia flag
 - [x] Add Thalizar flag
 - [x] Add Nova flag
-- [ ] Add Luxuria flag
+- [x] Add Luxuria flag
 - [ ] Add Jiyustan flag
+- [ ] Add other 'minor' flags
 - [ ] Possibly rework reply system to use embeds 
 - [ ] Possibly change how commands are handled to use a different system
 

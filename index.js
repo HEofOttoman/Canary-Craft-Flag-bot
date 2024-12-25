@@ -42,7 +42,7 @@ client.on('messageCreate', (message) => {
         message.channel.send({ content: 'The Flag of Nova', files: [novaflag ]});
     }
     if (message.content === '!Luxuria') { // Luxuria
-        const luxuriaflag = new AttachmentBuilder('./assets/Thalizar Flag.png') // add file (current is placeholder)
+        const luxuriaflag = new AttachmentBuilder('./assets/Luxuria Flag.png') // add file (current is placeholder)
         message.channel.send({content: 'Flag of Luxuria.png', files: [luxuriaflag]});
     }
     if (message.content === '!Thalizar') { // Thalizar
