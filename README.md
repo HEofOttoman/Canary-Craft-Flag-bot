@@ -13,6 +13,7 @@ Features the following flags, along with a subtitle:
 - Serenthia
 - Thalizar
 - Nova
+- Luxuria
 
 ### Checklist
 - [ ] Add a list of commands
@@ -24,8 +25,15 @@ Features the following flags, along with a subtitle:
 - [x] Add Luxuria flag
 - [ ] Add Jiyustan flag
 - [ ] Add other 'minor' flags
-- [ ] Possibly rework reply system to use embeds 
-- [ ] Possibly change how commands are handled to use a different system
+    - [ ] Eregore (Realm of Nordia)
+    - [ ] Kastavia (Realm of Nordia)
+    - [ ] The Red Skull (Defunct Country)
+    - [ ] Laxamentum (Defunct Country)
+    - [ ] Rainy and tgforce14's 'rebellion flag'
+    
+- [ ] Enable customisation somehow
+- [ ] ~~Possibly rework reply system to use embeds~~ 
+- [ ] ~~Possibly change how commands are handled to use a different system~~
 
 ### How to use
 Use the [bot invite](https://discord.com/oauth2/authorize?client_id=1309719801165385728&permissions=116736&integration_type=0&scope=bot), and invite the bot to your desired server.
@@ -33,12 +41,30 @@ Use the [bot invite](https://discord.com/oauth2/authorize?client_id=130971980116
 To display one of the flags, type in one of the commands below:
 - !Nordia
 - !Thalizar
-- !Luxuria (Placeholder flag)
+- !Luxuria
 - !Nova
 - !Serenthia
 
 ### Self-Hosting
-To self-host the bot, you must create a JSON file called 'config.json' with a variable called `Token` with the value of your own bot token.
+1. Clone the repository onto your device <br>
+    `gh repo clone HEofOttoman/Canary-Craft-Flag-bot`
+
+2. Install NodeJS
+    
+3. Install Discord.js. <br>
+    `npm install discord.js`
+
+4. Create a file named `config.json` 
+
+5. Create a variable named `token` in `config.json`
+
+6. Inside the `token` variable, insert your own bot
+
+7. Your `config.json` file should look like this:
+    `{"token" : "your_token_here"}`
+
+8. Run `node index.js`
 
 ### Credits
-Bot & code by HenryWauzivuff.
+- Bot & code © HenryWauzivuff.
+- Made for Hack Club High Seas
