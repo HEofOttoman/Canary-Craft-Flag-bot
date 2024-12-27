@@ -27,6 +27,14 @@ client.on('messageCreate', (message) => {
     }
 });
 
+// List of all commands and flags
+//client.on('messageCreate', (message) => {
+    //if (message.content === '?flaglist') {
+        //message.reply({ content: 
+        // '(list of flags'})
+    //}
+//})
+
 // Handle commands
 client.on('messageCreate', (message) => {
     if (message.content === '!Nordia') { // Nordia
@@ -37,12 +45,17 @@ client.on('messageCreate', (message) => {
         const serenthiaflag = new AttachmentBuilder('./assets/Serenthia Flag.png');
         message.channel.send({ content: 'Flag of the Kingdom of Serenthia', files: [serenthiaflag] });
     }
+    if (message.content === '!Jiyustan') { // Jiyustan
+            const jiyustanflag = new AttachmentBuilder('./assets/Jiyustan Flag.png');
+            message.channel.send({content: 'Flag of Jiyustan', files: [jiyustanflag] });
+    }
+
     if (message.content === '!Nova') { // Nova
-        const novaflag = new AttachmentBuilder('./assets/Nova Flag.png'); // add file (current is placeholder)
+        const novaflag = new AttachmentBuilder('./assets/Nova Flag.png');
         message.channel.send({ content: 'The Flag of Nova', files: [novaflag ]});
     }
     if (message.content === '!Luxuria') { // Luxuria
-        const luxuriaflag = new AttachmentBuilder('./assets/Luxuria Flag.png') // add file (current is placeholder)
+        const luxuriaflag = new AttachmentBuilder('./assets/Luxuria Flag.png')
         message.channel.send({content: 'Flag of Luxuria.png', files: [luxuriaflag]});
     }
     if (message.content === '!Thalizar') { // Thalizar

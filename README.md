@@ -23,7 +23,8 @@ Features the following flags, along with a subtitle:
 - [x] Add Thalizar flag
 - [x] Add Nova flag
 - [x] Add Luxuria flag
-- [ ] Add Jiyustan flag
+- [x] Add Jiyustan flag
+- [ ] Distinguish between Jiyustan and Serenthia
 - [ ] Add other 'minor' flags
     - [ ] Eregore (Realm of Nordia)
     - [ ] Kastavia (Realm of Nordia)
@@ -32,6 +33,7 @@ Features the following flags, along with a subtitle:
     - [ ] Rainy and tgforce14's 'rebellion flag'
     
 - [ ] Enable customisation somehow
+- [ ] Add better artwork and assets
 - [ ] ~~Possibly rework reply system to use embeds~~ 
 - [ ] ~~Possibly change how commands are handled to use a different system~~
 
