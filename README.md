@@ -65,7 +65,7 @@ To display one of the flags, type in one of the commands below:
 7. Your `config.json` file should look like this:
     `{"token" : "your_token_here"}`
 
-8. Run `node index.js`
+8. Run `node bot.js`
 
 ### Credits
 - Bot & code © HenryWauzivuff.
