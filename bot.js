@@ -1,3 +1,5 @@
+// bot.js
+
 // Require the necessary discord.js classes
 const { Client, AttachmentBuilder, Events, GatewayIntentBits, BaseInteraction } = require('discord.js');
 

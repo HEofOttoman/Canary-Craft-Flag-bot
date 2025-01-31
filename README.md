@@ -36,24 +36,35 @@ Features the following flags, along with a subtitle:
     - [ ] Rainy and tgforce14's 'rebellion flag'
     - [ ] Old Nova flag
     
-- [ ] Enable customisation somehow
+- [x] Enable customisation somehow (WIP)
 - [ ] Add better artwork and assets
     - [x] Edit certain flags to look better
     - [ ] Add a better banner
-- [ ] *Possibly* rework reply system to use embeds
-- [ ] *Possibly* change how commands are handled to use a different system
+- [ ] Possibly rework reply system to use embeds
+- [ ] Change how commands are handled to use a modular system
+    - [x] Started work on a modular system using module exports.
+        > This will allow some customisation through `./commands`   
+    - [ ] Replace the current messy command handling system in bot.js with the slightly less messy modular system*
 
 ### How to use
 Use the [bot invite](https://discord.com/oauth2/authorize?client_id=1309719801165385728&permissions=116736&integration_type=0&scope=bot), and invite the bot to your desired server.
 
-To see a list of all commands, use `/flaglist`
+To see a list of all commands, use `/flaglist`. To display one of the flags, type in one of the commands displayed
 
-To display one of the flags, type in one of the commands below:
-- !Nordia
-- !Thalizar
-- !Luxuria
-- !Nova
-- !Serenthia
+<details>
+<summary>List of all commands currently featured in the bot</summary>
+<ul>
+<li> /flaglist </li>
+<li> !Nordia </li>
+<li> !Thalizar </li>
+<li> !Luxuria </li>
+<li> !Nova </li>
+<li> !Jiyustan </li>
+<li> !Serenthia </li>
+<li> !Red Skull </li>
+<li> !Eregore </li>
+</ul>
+</details>
 
 ### Self-Hosting
 1. Clone the repository onto your device <br>
@@ -85,19 +96,66 @@ To display one of the flags, type in one of the commands below:
     ```
 
 ### Customisation (WIP)
-Work in progress.
+Modular customisation is a work in progress, but customisation can directly be done through `bot.js`.
 
-1. Create the flag you wish to display, and put it in the `assets` folder.
-2. Customise the following code to suit the flag.
+#### Using the `if` chain in `bot.js`
+This method 
+
+1. Create your own instance of the bot (see )
+2. Create the flag/image you wish to display, and put it in the `./assets` folder.
+
+3. Customise the following code to suit your flag.
     ```
     client.on('messageCreate', (message) => {
-        if (message.content === '!commandnamehere') {
-            const yourflagnamehere = new AttachmentBuilder('./assets/yourflagpathhere');
-            message.channel.send({ content: 'Your Caption Here', files: [nordiaflag] });
+        if (message.content === '!YOUR_COMMAND_HERE') {
+            const myflag = new AttachmentBuilder('./assets/YOUR_FLAG_PATH_HERE.png');
+            message.channel.send({ content: 'YOUR_FLAG_HERE', files: [myflag] });
         }
     });
     ```
-3. Paste your new code within `bot.js`.
+
+4. Paste your new code within `bot.js`.
+
+5. Run the bot and test your new command in Discord. 
+
+#### Using command modules in `./commands`
+This method of customisation has not yet been fully implemented, but this would be the method of customisation using it.
+
+1. Create your own instance of the bot by following the instructions in the 'Self-Hosting' section above.
+
+2. Create your command file within the `./commands` folder. 
+
+3. Paste this template into the file (or use the template file already provided)
+    ```
+    // Import necessary Discord.js classes
+    const { AttachmentBuilder } = require('discord.js');
+    const { pathToFileURL } = require('url');
+    const { SlashCommandBuilder } = require('discord.js');
+    const { CommandInteraction } = require('discord.js');
+
+    // Export command module
+    const customflag = {
+        customflag: function(message) {
+                    const customflag = new AttachmentBuilder('./assets/YOUR_FLAG_PATH_HERE.png'); // This path should point to your desired image 
+                    message.channel.send({ content: 'YOUR_CAPTION_HERE', files: [customflag] });
+                }
+    };
+
+    module.exports = {
+        customflag,
+    }
+    ```
+
+4. Paste the following code within `bot.js`. This command will call the function from your command file.
+    ```
+    const { customflag } = require('./commands/YOUR_FILE_PATH_HERE.js'); // This path should point to your command file
+
+    client.on('messageCreate', (message) => {
+        if (message.content === '!myflag')
+            return customflag.customflag(message);
+    });
+    ```
+5. Run the bot and test the command in Discord.
 
 ### Credits
 - Bot & code © HenryWauzivuf 2025.
