@@ -9,6 +9,7 @@ Disclaimer: This bot uses the following privileged intents to function:
 
 ### Features:
 Features the following flags, along with a subtitle:
+
 - Nordia
 - Jiyustan
 - Thalizar
@@ -17,6 +18,22 @@ Features the following flags, along with a subtitle:
 - Serenthia
 - Red Skull
 - Eregore
+
+<details>
+<summary>Flag Gallery</summary>
+
+<figure>
+<img src="https://github.com/user-attachments/assets/81bae9ea-5021-400f-9a48-5e86a92f2330" width="23%"></img> 
+<img src="https://github.com/user-attachments/assets/340393b2-9c9b-49ad-9ca8-d68582640558" width="23%"></img> 
+<img src="https://github.com/user-attachments/assets/e61a7fcc-fa85-4acf-bef6-14e7b112abb1" width="23%"></img> 
+<img src="https://github.com/user-attachments/assets/1eb93ddb-c728-40e6-bac0-30d04cad75c0" width="23%"></img> 
+<img src="https://github.com/user-attachments/assets/40e238a2-b81e-4bc6-bee8-e4db0bc76953" width="23%"></img>
+<img src="https://github.com/user-attachments/assets/788033f0-ed59-4cdc-b342-b6b194707423" width="23%"></img> 
+<img src="https://github.com/user-attachments/assets/a72b7f7b-3796-4faf-9b27-45f816012e79" width="23%"></img> 
+<img src="https://github.com/user-attachments/assets/db0a1c36-73f6-4bfb-a316-6c47f153d8d8" width="23%"></img>s
+</figure>
+
+</details>
 
 ### Checklist
 - [x] Add a list of commands
