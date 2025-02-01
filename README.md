@@ -113,12 +113,12 @@ To see a list of all commands, use `/flaglist`. To display one of the flags, typ
     ```
 
 ### Customisation (WIP)
-Modular customisation is a work in progress, but customisation can directly be done through `bot.js`.
+Modular customisation is a work in progress, but customisation can be done directly through `bot.js`.
 
 #### Using the `if` chain in `bot.js`
-This method 
+This method can already be used because of how the bot is built. However, it is a bit messy because it requires editing the main `bot.js` file, which is already quite full of code.
 
-1. Create your own instance of the bot (see )
+1. Create your own instance of the bot (see section 'Self-Hosting')
 2. Create the flag/image you wish to display, and put it in the `./assets` folder.
 
 3. Customise the following code to suit your flag.
@@ -135,8 +135,8 @@ This method
 
 5. Run the bot and test your new command in Discord. 
 
-#### Using command modules in `./commands`
-This method of customisation has not yet been fully implemented, but this would be the method of customisation using it.
+#### Using command modules in `./commands` (currently not implemented)
+This method of customisation has not yet been fully implemented, but this tutorial will be used to explain customisation using it.
 
 1. Create your own instance of the bot by following the instructions in the 'Self-Hosting' section above.
 
